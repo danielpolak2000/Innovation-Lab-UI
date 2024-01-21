@@ -1,0 +1,3 @@
+<app-start-page *ngIf="!showQuestion && !showResult" (startEvent)="startQuiz()"></app-start-page>
+<app-question-page *ngIf="showQuestion" [question]="currentQuestion" (submitEvent)="submitAnswer($event)"></app-question-page>
+<app-result-page *ngIf="showResult" [results]="quizResults" [totalScore]="totalScore" (restartEvent)="restartQuiz()"></app-result-page>

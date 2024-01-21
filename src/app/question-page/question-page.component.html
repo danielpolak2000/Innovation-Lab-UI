@@ -1,0 +1,6 @@
+<div *ngIf="question">
+    <p>{{ question.text }}</p>
+    <input type="range" [(ngModel)]="answer" min="{{ question.min }}" max="{{ question.max }}">
+    <button (click)="submit()">Submit</button>
+</div>
+  

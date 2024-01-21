@@ -1,0 +1,46 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #2c3e50;
+}
+  
+div {
+text-align: center;
+color: #ecf0f1;
+}
+
+input {
+width: 80%;
+margin-top: 20px;
+appearance: none;
+height: 10px;
+border-radius: 5px;
+background: #bdc3c7;
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+}
+
+input:hover {
+opacity: 1;
+}
+
+button {
+margin-top: 20px;
+padding: 15px 30px;
+font-size: 18px;
+background-color: #27ae60;
+color: #ffffff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #219d54;
+}

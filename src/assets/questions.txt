@@ -1,0 +1,2 @@
+What is your favorite color?|0|10
+How would you rate your experience?|0|10
