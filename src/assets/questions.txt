@@ -1,2 +1,20 @@
-What is your favorite color?|0|10
-How would you rate your experience?|0|10
+Ich bin sehr pflichtbewusst.|0|4
+Ich fühle mich oft unsicher.|0|4
+Ich verspüre oft eine große innere Unruhe.|0|4
+Ich mache mir oft unnütze Sorgen.|0|4
+Ich grübele viel über meine Zukunft nach.|0|4
+Oft überwältigen mich meine Gefühle.|0|4
+Ich bin oft ohne Grund traurig.|0|4
+Ich bin oft nervös.|0|4
+Oft werde ich von meinen Gefühlen hin- und her gerissen.|0|4 
+Ich bin mir in meinen Entscheidungen oft unsicher.|0|4
+Ich bin sehr pflichtbewusst.|0|4
+Meine Aufgaben erledige ich immer sehr genau.|0|4
+Ich war schon als Kind sehr ordentlich.|0|4
+Ich gehe immer planvoll vor.|0|4
+Ich habe meine festen Prinzipien und halte daran auch fest.|0|4
+Auch kleine Bußgelder sind mir sehr unangenehm.|0|4
+Auch kleine Schlampereien stören mich.|0|4
+Ich achte sehr darauf, dass Regeln eingehalten werden.|0|4
+Wenn ich mich einmal entschieden habe, dann weiche ich davon auch nicht mehr ab.|0|4
+Ich mache eigentlich nie Flüchtigkeitsfehler.|0|4
