@@ -9,6 +9,6 @@ export class QuestionService {
   constructor(private http: HttpClient) {}
 
   getQuestions(): Observable<any> {
-    return this.http.get('assets/questions.txt', { responseType: 'text' });
+    return this.http.get('assets/questions_small.txt', { responseType: 'text' });
   }
 }

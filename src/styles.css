@@ -6,12 +6,20 @@
 
 @font-face {
     font-family: 'IBM_Plex_Mono-Regular';
-    src: url('src/assets/fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf');
+    src: url('src/assets/fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf');
 } 
 
+
+@font-face {
+    font-family: 'IBM_Plex_Mono-Light';
+    src: url('src/assets/fonts/IBM_Plex_Mono/IBMPlexMono-ExtraLight.ttf');
+} 
+
+
+
 button {
-    padding: 10px 30px;
-    font-size: 30px;
+    padding: 15px 40px;
+    font-size: 20px;
     background-color: transparent;
     color: #ffffff;
     border: none;
@@ -19,8 +27,15 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 50px;
+    transition: 0.6s;
 }
 
 button:hover {
     background-color: #ffffff1e;
+    transition: 0.6s;
+}
+
+p {
+    font-family: 'IBM_Plex_Mono-Regular';
+
 }
