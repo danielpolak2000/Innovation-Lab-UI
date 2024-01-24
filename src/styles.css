@@ -15,7 +15,10 @@
     src: url('src/assets/fonts/IBM_Plex_Mono/IBMPlexMono-ExtraLight.ttf');
 } 
 
+p {
+    font-family: 'IBM_Plex_Mono-Regular';
 
+}
 
 button {
     padding: 15px 40px;
@@ -29,13 +32,16 @@ button {
     border-radius: 50px;
     transition: 0.6s;
 }
-
+  
 button:hover {
     background-color: #ffffff1e;
     transition: 0.6s;
-}
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 
-p {
-    font-family: 'IBM_Plex_Mono-Regular';
-
+button:hover:after {
+    opacity: 1;
 }

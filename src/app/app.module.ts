@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { QuestionPageComponent } from './question-page/question-page.component';
 import { ResultPageComponent } from './result-page/result-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartPageComponent,
     QuestionPageComponent,
-    ResultPageComponent
+    ResultPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
