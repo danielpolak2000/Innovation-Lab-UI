@@ -13,6 +13,7 @@ div {
 input {
     width: 200px;
     margin-top: 20px;
+    margin-bottom: 22px;
     appearance: none;
     height: 1px;
     border-radius: 5px;
