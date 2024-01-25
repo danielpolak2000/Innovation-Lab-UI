@@ -4,3 +4,16 @@
     height: 100vh;
 }
 
+
+.explanation {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.button-container{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+

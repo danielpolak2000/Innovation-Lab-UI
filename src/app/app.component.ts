@@ -18,12 +18,9 @@ export class AppComponent implements OnInit {
   constructor(private questionService: QuestionService) {}
 
   ngOnInit() {
-    this.questionService.getQuestions().subscribe((data: string) => {
+    this.questionService.getQuestions(["Extraversion", "Gewissenhaftigkeit", "Neurotizismus", "Offenheit", "Sicherheitsmotiv"], 1).subscribe((data: { text: string}[]) => {
       // Parse the data into JSON
-      this.questions = data.split('\n').map((line) => {
-        const [text, min, max] = line.split('|');
-        return { text, min: parseInt(min), max: parseInt(max) };
-      });
+      this.questions = data;
     });
   }
 
