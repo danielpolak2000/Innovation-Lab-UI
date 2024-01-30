@@ -1,0 +1,13 @@
+﻿Auswertungsschema der Fragen
+
+Antwortmöglichkeiten:trifft gar nicht zu
+trifft eher nicht zu
+trifft eher zu
+trifft genau zu
+
+Erzielter Score:
+Neurotizismus:trifft gar nicht zu	--> 1trifft eher nicht zu	--> 0.75trifft eher zu		--> 0.25trifft genau zu		--> 0
+Gewissenhaftigkeit:trifft gar nicht zu	--> 1trifft eher nicht zu	--> 0.75trifft eher zu		--> 0.25trifft genau zu		--> 0Sicherheitsmotiv:trifft gar nicht zu	--> 1trifft eher nicht zu	--> 0.75trifft eher zu		--> 0.25trifft genau zu		--> 0
+Extraversion:trifft gar nicht zu	--> 0trifft eher nicht zu	--> 0.25trifft eher zu		--> 0.75trifft genau zu		--> 1
+Offenheit:trifft gar nicht zu	--> 0trifft eher nicht zu	--> 0.25trifft eher zu		--> 0.75trifft genau zu		--> 1
+Endscore wieder durch 5 teilen für durchschnittlichen Wert. 

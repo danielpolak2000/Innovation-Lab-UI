@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, forkJoin } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { Question } from './models';
 
 @Injectable({
   providedIn: 'root'
@@ -13,43 +14,46 @@ export class QuestionService {
 
   getQuestions(
     fileNames: string[],
-    amount: number,
-  ): Observable<{ text: string}[]> {
+    amount: number
+  ): Observable<Question[]> {
     const observables: Observable<string>[] = [];
-
-    // Create an array of observables for each file
+  
     for (const fileName of fileNames) {
       observables.push(this.http.get(`assets/${fileName}.txt`, { responseType: 'text' }));
     }
-
+  
     return forkJoin(observables).pipe(
       map((fileContents: string[]) => {
-        const selectedQuestions: { text: string}[] = [];
-
-        for (const fileContent of fileContents) {
-          const allLines = fileContent.split('\n').filter(line => line.trim() !== '');
-
-          // Ensure that the requested amount is not more than the total number of lines
+        const selectedQuestions: Question[] = [];
+  
+        for (let i = 0; i < fileNames.length; i++) {
+          const category = this.extractCategory(fileNames[i]);
+          const allLines = fileContents[i].split('\n').filter(line => line.trim() !== '');
           const requestedAmount = Math.min(amount, allLines.length);
-
-          // Shuffle the array to randomize the order
           const shuffledLines = this.shuffleArray(allLines);
-
-          // Select the first 'requestedAmount' lines from each file
-          for (let i = 0; i < requestedAmount; i++) {
-            const [text] = shuffledLines[i].split('|');
-            const question = {
-              text
+  
+          for (let j = 0; j < requestedAmount; j++) {
+            const [text] = shuffledLines[j].split('|');
+            const question: Question = {
+              text,
+              category,
             };
-
             selectedQuestions.push(question);
           }
         }
-
+  
         return selectedQuestions;
       })
     );
   }
+  
+  private extractCategory(fileName: string): string {
+    // Implement logic to extract category from the file name
+    // For example, if your file names are like "CategoryA.txt", "CategoryB.txt", etc.
+    // You can extract the category by removing the ".txt" extension
+    return fileName.replace('.txt', '');
+  }
+  
 
   clearSelectedQuestionIndices() {
     this.selectedQuestionIndices.clear();
