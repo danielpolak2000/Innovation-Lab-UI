@@ -11,6 +11,7 @@ export class FooterComponent {
 
   restart() {
     this.restartEvent.emit();
+    window.location.reload()
   }
 
 }

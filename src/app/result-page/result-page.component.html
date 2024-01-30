@@ -1,6 +1,7 @@
-<ul>
-    <li *ngFor="let result of results">{{ result.text }}: {{ result.score }}</li>
-  </ul>
-  <p>Total Score: {{ totalScore }}</p>
-  <p class="explanation">Dieses Szenario tritt ein auf Basis deiner Antworten....</p>
-  
+<!-- results-page.component.html -->
+<p class="explanation">Dieses Szenario tritt ein auf Basis deiner Antworten....</p>
+
+<app-random-video *ngIf="showVideo" [results]="results" [totalScore]="totalScore"></app-random-video>
+
+<button (click)="startRandomVideo()">Start Video</button>
+

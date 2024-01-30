@@ -50,9 +50,11 @@ export class AppComponent implements OnInit {
       const { text, category } = question;
       const sliderValue = this.questionPageComponent?.sliderValue || 0;
       const calculatedScore = this.calculateScore(category, sliderValue);
+      
   
       this.quizResults.push({ text, category, score: calculatedScore });
       this.totalScore += calculatedScore;
+      console.log(this.totalScore)
       this.currentQuestionIndex++;
       this.loadQuestion();
   

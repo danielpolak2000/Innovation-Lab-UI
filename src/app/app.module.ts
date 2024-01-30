@@ -10,6 +10,7 @@ import { QuestionPageComponent } from './question-page/question-page.component';
 import { ResultPageComponent } from './result-page/result-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { ExplanationComponent } from './explanation/explanation.component';
+import { RandomVideoComponent } from './random-video/random-video.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ExplanationComponent } from './explanation/explanation.component';
     QuestionPageComponent,
     ResultPageComponent,
     FooterComponent,
-    ExplanationComponent
+    ExplanationComponent,
+    RandomVideoComponent
   ],
   imports: [
     BrowserModule,
