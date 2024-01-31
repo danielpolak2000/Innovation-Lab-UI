@@ -9,8 +9,8 @@ import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angu
 export class RandomVideoComponent implements OnInit, OnDestroy {
   @Input() totalScore: number = 0;
   private videoElement: HTMLVideoElement | null = null;
-  private introvertiertVideos: string[] = ['Langsam_auf_der_Autobahn.mp4', 'risikobereitschaft_intro.mp4', 'Musik_intro.mp4' , 'ueberhohlen_intro.mp4', 'koop_intro.mp4' ];
-  private extrovertiertVideos: string[] = ['Autobahn_rasen.mp4', 'langes_ueberhohlen.mp4', 'keine_koop.mp4', 'Musik_extro.mp4', 'risikobereitschaft_extro.mp4' ];
+  private introvertiertVideos: string[] = ['Langsam_auf_der_Autobahn.mp4', 'risikobereitschaft_intro.mp4', 'Musik_intro_neu.mp4' , 'ueberhohlen_intro.mp4', 'koop_intro.mp4' ];
+  private extrovertiertVideos: string[] = ['Autobahn_rasen.mp4', 'langes_ueberhohlen.mp4', 'keine_koop.mp4', 'Musik_extro_neu.mp4', 'risikobereitschaft_extro.mp4' ];
   @Input() results: any[] = [];
   @Output() restartEvent = new EventEmitter();
 
