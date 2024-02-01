@@ -1,10 +1,10 @@
 <div *ngIf="question">
-    <p>{{ question.text }}</p>
+    <p class="question">{{ question.text }}</p>
     <div class="slider-value">
         <span *ngIf="labelText">{{ labelText }}</span>
     </div>
     <input type="range" [(ngModel)]="sliderValue" min="0" max="3" (input)="onSliderChange()">
 </div>
 <div>
-    <button (click)="submit()">Submit</button>
+    <button (click)="submit()">Weiter</button>
 </div>  

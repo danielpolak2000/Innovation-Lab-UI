@@ -12,3 +12,7 @@
 ul, p, li {
     display: none; /* Hide the unordered list and paragraphs */
 }
+
+.resultButton{
+    display: none;
+}

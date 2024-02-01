@@ -19,5 +19,19 @@ margin-bottom: 10px;
 .explanation {
     color: #ffffff;
     font-size: 20px;
+    text-align: center;
 }
+
+.resultButton{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.button-container{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
+
 

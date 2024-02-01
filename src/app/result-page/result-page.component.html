@@ -1,7 +1,9 @@
 <!-- results-page.component.html -->
-<p class="explanation">Dieses Szenario tritt ein auf Basis deiner Antworten....</p>
+<p class="explanation">Auf Grund der von Ihnen beantworteten Fragen wird nun ein Video abgespielt, indem die KI anhand Ihrer Persönlichkeit handelt. Würden Sie heute genauso handeln? </p>
 
 <app-random-video *ngIf="showVideo" [results]="results" [totalScore]="totalScore"></app-random-video>
 
-<button (click)="startRandomVideo()">Start Video</button>
+<div class="button-container">
+  <button class="resultButton" (click)="startRandomVideo()">Video Starten</button>
+</div>
 

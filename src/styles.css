@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-* {
+body {
     font-family: 'IBM_Plex_Mono', monospace !important;
 }
 
@@ -16,11 +16,12 @@
 } 
 
 p {
-    font-family: 'IBM_Plex_Mono-Regular';
+    font-family: 'IBM_Plex_Mono-Light';
 
 }
 
 button {
+    font-family: 'IBM_Plex_Mono-Regular';
     padding: 15px 40px;
     font-size: 20px;
     background-color: transparent;

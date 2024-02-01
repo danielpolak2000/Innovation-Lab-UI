@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
 
   submitAnswer() {
     const question = this.questionPageComponent?.question;
-    console.log(this.processedCategories)
+    //console.log(this.processedCategories)
   
     if (question && !this.processedCategories.has(question.category)) {
       const { text, category } = question;
@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
   
       this.quizResults.push({ text, category, score: calculatedScore });
       this.totalScore += calculatedScore;
-      console.log(this.totalScore)
+      //console.log(this.totalScore)
       this.currentQuestionIndex++;
       this.loadQuestion();
   

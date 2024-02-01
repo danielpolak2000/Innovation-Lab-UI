@@ -46,7 +46,6 @@ export class RandomVideoComponent implements OnInit, OnDestroy {
   }
 
   handleVideoEnded() {
-    console.log('Video is 1 second before the end');
     window.location.reload()
   }
 
@@ -62,8 +61,10 @@ export class RandomVideoComponent implements OnInit, OnDestroy {
 
   private getRandomVideoPath(): string {
     this.totalScore = this.totalScore / 5;
+    console.log(this.totalScore)
     const videoDirectory = this.totalScore > 0.5 ? 'extrovertiert' : 'introvertiert';
     const videos = this.totalScore > 0.5 ? this.extrovertiertVideos : this.introvertiertVideos;
+    console.log(videoDirectory)
 
     if (videos && videos.length > 0) {
       const randomIndex = Math.floor(Math.random() * videos.length);
