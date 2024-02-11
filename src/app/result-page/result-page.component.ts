@@ -1,4 +1,3 @@
-// results-page.component.ts
 import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core';
 import { RandomVideoComponent } from '../random-video/random-video.component';
 

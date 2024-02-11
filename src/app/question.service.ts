@@ -48,9 +48,6 @@ export class QuestionService {
   }
   
   private extractCategory(fileName: string): string {
-    // Implement logic to extract category from the file name
-    // For example, if your file names are like "CategoryA.txt", "CategoryB.txt", etc.
-    // You can extract the category by removing the ".txt" extension
     return fileName.replace('.txt', '');
   }
   
@@ -60,7 +57,6 @@ export class QuestionService {
   }
 
   private shuffleArray(array: any[]): any[] {
-    // Fisher-Yates shuffle algorithm
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];

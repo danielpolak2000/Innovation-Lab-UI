@@ -22,7 +22,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.questionService.getQuestions(["Extraversion", "Gewissenhaftigkeit", "Neurotizismus", "Offenheit", "Sicherheitsmotiv"], 1).subscribe((data: { text: string}[]) => {
-      // Parse the data into JSON
       this.questions = data;
     });
   }
@@ -57,8 +56,7 @@ export class AppComponent implements OnInit {
       //console.log(this.totalScore)
       this.currentQuestionIndex++;
       this.loadQuestion();
-  
-      // Mark the category as processed
+
       this.processedCategories.add(category);
     }
   }
@@ -73,7 +71,6 @@ export class AppComponent implements OnInit {
   }
 
   private calculateScore(category: string, sliderValue: number): number {
-    // Implement category-specific scoring rules
     switch (category) {
       case 'Neurotizismus':
         switch (sliderValue) {
@@ -86,12 +83,11 @@ export class AppComponent implements OnInit {
           case 3:
             return 0;
           default:
-            return 0; // Default score for unrecognized slider values
+            return 0; 
         }
       case 'Gewissenhaftigkeit':
       case 'Sicherheitsmotiv':
-        // Adjust the scoring rules for Gewissenhaftigkeit and Sicherheitsmotiv as needed
-        // For example, use the same rules as Neurotizismus for demonstration purposes
+
         return this.calculateScore('Neurotizismus', sliderValue);
   
       case 'Extraversion':
@@ -106,11 +102,11 @@ export class AppComponent implements OnInit {
           case 3:
             return 1;
           default:
-            return 0; // Default score for unrecognized slider values
+            return 0;
         }
   
       default:
-        return 0; // Default score for unrecognized categories
+        return 0; 
     }
   }
 

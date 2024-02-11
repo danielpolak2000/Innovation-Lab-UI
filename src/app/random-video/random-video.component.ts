@@ -1,4 +1,3 @@
-// random-video.component.ts
 import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -30,8 +29,6 @@ export class RandomVideoComponent implements OnInit, OnDestroy {
       this.videoElement.src = videoPath;
       this.videoElement.load();
       
-
-      // Add an event listener for the 'timeupdate' event
       this.videoElement.addEventListener('timeupdate', this.handleTimeUpdate.bind(this));
     }
   }
@@ -39,7 +36,6 @@ export class RandomVideoComponent implements OnInit, OnDestroy {
   handleTimeUpdate() {
     const videoElement = this.videoElement;
 
-    // Check if the video is 1 second before the end
     if (videoElement && videoElement.duration - videoElement.currentTime < 1) {
       this.handleVideoEnded();
     }
@@ -52,9 +48,8 @@ export class RandomVideoComponent implements OnInit, OnDestroy {
   stopVideo() {
     if (this.videoElement) {
       this.videoElement.pause();
-      this.videoElement.src = ''; // Reset the video source
+      this.videoElement.src = ''; 
 
-      // Remove the 'timeupdate' event listener
       this.videoElement.removeEventListener('timeupdate', this.handleTimeUpdate.bind(this));
     }
   }
